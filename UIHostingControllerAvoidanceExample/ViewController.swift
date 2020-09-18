@@ -10,7 +10,11 @@ import UIKit
 import SwiftUI
 struct ContentView: View {
     var body: some View {
-        Text("I want this text to stay put.")
+        // Uncommenting these next lines makes the text stay put correctly
+//        VStack {
+            Text("I want this text to stay put.")
+//            Spacer(minLength: 0)
+//        }
             .ignoresSafeArea(.keyboard)
     }
 }
